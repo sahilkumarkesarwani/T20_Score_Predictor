@@ -20,7 +20,7 @@ teams = [
     'New Zealand',
     'Pakistan',
     'South Africa',
-    'Sri Lanka' 
+    'Sri Lanka',
     'West Indies',
 ]
 
@@ -54,9 +54,9 @@ city = st.selectbox('Select Venue', sorted(df['city'].unique()))
 
 
 if overs >= 5:
-    five_over_score = st.number_input('Score in first 5 overs', min_value = 0, max_value = 180)
+    five_over_score = st.number_input('Score in last 5 overs', min_value = 0, max_value = 180)
 else: 
-    st.write('Wait for 5 overs to complete.')
+    st.write('Wait 5 overs to complete.')
     st.stop()
 
 if st.button('Predict Score'):
