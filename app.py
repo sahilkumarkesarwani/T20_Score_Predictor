@@ -41,7 +41,7 @@ if batting_team == bowling_team:
 col3, col4, col5 = st.columns(3)
 
 with col3:
-    overs = st.number_input('How many overs have been played', min_value = 0.1, max_value= 20.0, step = 1)
+    overs = st.number_input('How many overs have been played', min_value = 1, max_value= 20, step = 1)
 
 with col4:
     runs = st.number_input('How many runs have been scored', max_value= 360, steps = 1)
