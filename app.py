@@ -44,7 +44,7 @@ with col3:
     overs = st.number_input('How many overs have been played', min_value = 1, max_value= 20, step = 1)
 
 with col4:
-    runs = st.number_input('How many runs have been scored', max_value= overs * 6, step = 1)
+    runs = st.number_input('How many runs have been scored', max_value= 360, step = 1)
 
 with col5:
     wickets = st.number_input('How many wickets have been lost', max_value= 10, step = 1)
